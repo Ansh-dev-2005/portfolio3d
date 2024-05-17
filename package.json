@@ -2,9 +2,11 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://ansh-dev-2005.github.io/portfolio3d/",
   "type": "module",
   "scripts": {
-   
+        "predeploy": "npm run vite build",
+   "deploy" : "gh-pages -d dist" ,
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
