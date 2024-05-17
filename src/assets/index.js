@@ -22,14 +22,14 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-
+import upes from "./upes.jpeg"
+import astha from "./astha.png"
+import niyamsewa from "./niyamsewa.png"
+import invoicewala from "./invoicewala.png"
+import bus from "./bus.png"
+import socis from "./socis.jpg"
+import icon from "./icon.png"
 export {
   logo,
   backend,
@@ -53,10 +53,11 @@ export {
   typescript,
   threejs,
   meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  upes,
+  astha,
+  niyamsewa,
+  invoicewala,
+  bus,
+  socis,
+  icon
 };
