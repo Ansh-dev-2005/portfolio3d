@@ -165,7 +165,7 @@ const testimonials = [
     testimonial:
       "Your commitment to these projects and your collaboration with the university community are examplary. It is through the efforts of individuals like you that UPES continues to advance and deliver quality education and services to our stakeholders",
     name: "Dr. Saurabh Shanu",
-    designation: "Assistant Proffesor ",
+    designation: "Assistant professor ",
     company: "UPES",
     image: icon,
   },
