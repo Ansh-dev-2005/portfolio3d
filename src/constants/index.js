@@ -188,7 +188,7 @@ const projects = [
       },
     ],
     image: niyamsewa,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://www.niyamsewa.com/",
   },
   {
     name: "InvoiceWala",
@@ -209,7 +209,7 @@ const projects = [
       },
     ],
     image: invoicewala,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://invoicewala.in/",
   },
   {
     name: "UPES Transportaiton",
