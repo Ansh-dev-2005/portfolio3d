@@ -20,9 +20,10 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-
+import nextjs from "./tech/nextjs.png";
+import python from "./tech/python.png";
 import meta from "./company/meta.png";
-
+import aws from "./tech/aws.png";
 import upes from "./upes.jpeg"
 import astha from "./astha.png"
 import niyamsewa from "./niyamsewa.png"
@@ -30,6 +31,8 @@ import invoicewala from "./invoicewala.png"
 import bus from "./bus.png"
 import socis from "./socis.jpg"
 import icon from "./icon.png"
+import argenie from "./argenie.png";
+import elephant from "./elephant.jpg";
 export {
   logo,
   backend,
@@ -59,5 +62,10 @@ export {
   invoicewala,
   bus,
   socis,
-  icon
+  icon,
+  argenie,
+  nextjs,
+  python,
+  aws,
+  elephant
 };

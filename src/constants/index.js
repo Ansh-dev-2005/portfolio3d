@@ -17,12 +17,16 @@ import {
   docker,
   threejs,
   upes,
-  astha,
   niyamsewa,
   invoicewala,
   bus,
   socis,
-  icon
+  icon,
+  nextjs,
+  argenie,
+  python,
+  aws,
+  elephant
 } from "../assets";
 
 export const navLinks = [
@@ -42,22 +46,23 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend Engineer (React/Next.js)",
     icon: web,
   },
   {
-    title: "NextJS Developer",
+    title: "AI Engineer – Fullstack Focus",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Cloud Solutions Developer",
     icon: backend,
   },
   {
-    title: "Fullstack Developer ",
+    title: "Fullstack Developer",
     icon: creator,
   },
 ];
+
 
 const technologies = [
   {
@@ -112,15 +117,42 @@ const technologies = [
     name: "docker",
     icon: docker,
   },
+  {
+    name: "Next JS",
+    icon: nextjs,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "AWS",
+    icon:  aws,
+  },
 ];
 
 const experiences = [
+    {
+    title: "Software Development Intern",
+    company_name: "AR Genie",
+    icon: argenie,
+    iconBg: "#000000",
+    date: "June 2025 - Present",
+    points: [
+      "Developed real-time video calling features using WebRTC and integrated MQTT for device communication.",
+      "Implemented scalable state management with Zustand and form validation with Zod, ensuring robust UX flows.",
+      "Utilized ReactJS and Next.js to build dynamic, SEO-friendly interfaces aligned with design specifications.",
+      "Worked on complex UI interactions and device management panels for an augmented reality support system.",
+      "Collaborated with cross-functional teams to design and deploy secure user authentication systems and session handling.",
+    ],
+  },
+
   {
     title: "Fullstack Developer",
     company_name: "University of Petroleum and Energy Studies",
     icon: upes,
     iconBg: "#ffffff",
-    date: "September 2023 - Present",
+    date: "September 2023 - September 2024",
     points: [
       "Spearheaded the development of a Faculty Portal for the University of Petroleum and Energy Studies, employing Node.js for backend functionalities.",
       "Engineered dynamic and responsive user interfaces for the Faculty Portal using React.js, enhancing user engagement and experience.",
@@ -129,20 +161,9 @@ const experiences = [
       "Implemented advanced features such as live tracking, route optimization, and user-friendly interfaces to streamline the transportation experience for students.",
     ],
   },
-  {
-    title: "NGO Intern",
-    company_name: "Astha Rural Foundation",
-    icon: astha,
-    iconBg: "#E6DEDD",
-    date: "June 2023 - August 2023",
-    points: [
-      "Assisted in organizing and coordinating various programs aimed at women empowerment and child development.",
-      "Contributed to educational initiatives by designing and implementing interactive learning activities for children.",
-      "Participated in community outreach efforts to raise awareness about women's health, hygiene, and rights.",
-      "Supported the implementation of skill development workshops for women to enhance their economic independence.",
-    ],
-  },
+
 ];
+
 
 const testimonials = [
   {
@@ -175,17 +196,10 @@ const projects = [
   {
     name: "Niyamsewa",
     description:
-      "Developed the official website for Niyamsewa, an NGO dedicated to supporting underserved communities in Vrindavan.",
+      "Developed the official website for Niyamsewa, an NGO dedicated to supporting underserved communities in Vrindavan, using React and TailwindCSS.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      { name: "react", color: "blue-text-gradient" },
+      { name: "tailwind", color: "pink-text-gradient" },
     ],
     image: niyamsewa,
     source_code_link: "https://www.niyamsewa.com/",
@@ -193,66 +207,77 @@ const projects = [
   {
     name: "InvoiceWala",
     description:
-      "In today's digital era, we recognize the importance of streamlining operations, enhancing customer engagement, and embracing eco-friendly billing. With our platform, you can easily share invoices via WhatsApp, revolutionizing e-invoicing while reducing environmental impact. Discover how Invoicewala can optimize your business operations and empower your organization for success. Join us in paving the way for efficiency, effectiveness, and eco-friendly billing solutions.",
+      "A modern e-invoicing platform that enables businesses to generate and share invoices directly via WhatsApp, promoting efficient and eco-friendly billing practices.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
+      { name: "react", color: "blue-text-gradient" },
+      { name: "restapi", color: "green-text-gradient" },
+      { name: "scss", color: "pink-text-gradient" },
     ],
     image: invoicewala,
     source_code_link: "https://invoicewala.in/",
   },
   {
-    name: "UPES Transportaiton",
+    name: "UPES Transportation Tracker",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Developed a live bus tracking system for UPES students using React.js and Node.js, featuring route optimization and real-time location updates.",
     tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+      { name: "nextjs", color: "blue-text-gradient" },
+      { name: "nodejs", color: "green-text-gradient" },
+      { name: "socket.io", color: "pink-text-gradient" },
     ],
     image: bus,
+    source_code_link: "https://github.com/",
+  },
+
+  {
+    name: "AR Genie Support Platform",
+    description:
+      "Engineered a remote support system with AR-based video calls, device control via MQTT, and scalable frontend using Zustand, Zod, and React Hook Form.",
+    tags: [
+      { name: "nextjs", color: "blue-text-gradient" },
+      { name: "webrtc", color: "green-text-gradient" },
+      { name: "zustand", color: "pink-text-gradient" },
+    ],
+    image: argenie,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Human-Elephant Conflict Predictor",
+    description:
+      "A GIS and ML-powered application predicting potential human-elephant conflict zones in Nagaland using terrain, village proximity, and movement data.",
+    tags: [
+      { name: "python", color: "blue-text-gradient" },
+      { name: "machinelearning", color: "green-text-gradient" },
+      { name: "gis", color: "pink-text-gradient" },
+    ],
+    image: elephant,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "SRE Portal - Exam Deck Management System",
+    description:
+      "Built a portal for UPES Student Records & Examination Department to create, manage, and track exam decks with QR generation, evaluator tracking, PDF/CSV exports, and email notifications.",
+    tags: [
+      { name: "react", color: "blue-text-gradient" },
+      { name: "tailwindcss", color: "green-text-gradient" },
+      { name: "antdesign", color: "pink-text-gradient" },
+    ],
+    image: socis,
     source_code_link: "https://github.com/",
   },
   {
     name: "School of Computer Science Information Systems (SOCIS)",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Designed and developed the SOCIS official site showcasing faculty, research, and departmental resources using Next.js and Supabase.",
     tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+      { name: "nextjs", color: "blue-text-gradient" },
+      { name: "supabase", color: "green-text-gradient" },
+      { name: "css", color: "pink-text-gradient" },
     ],
     image: socis,
     source_code_link: "https://github.com/",
   },
 ];
+
 
 export { services, technologies, experiences, testimonials, projects };
